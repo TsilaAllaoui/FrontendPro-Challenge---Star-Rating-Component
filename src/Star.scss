@@ -1,4 +1,18 @@
 #star {
   color: grey;
   font-size: 5rem;
+  display: flex;
+  width: 8rem;
+
+  #left {
+    clip-path: inset(0 50% 0 0);
+    color: grey;
+    transform: translateX(50%);
+  }
+
+  #right {
+    clip-path: inset(0 0 0 50%);
+    color: grey;
+    transform: translateX(-50%);
+  }
 }

@@ -11,8 +11,8 @@ function App() {
     "Excellent! We're thrilled to hear you had such a positive experience. Thank you for choosing our platform.",
   ];
 
-  const [starCount, setStarCount] = useState(1);
-  const [starCountTemp, setStarCountTemp] = useState(1);
+  const [starCount, setStarCount] = useState(3);
+  const [starCountTemp, setStarCountTemp] = useState(3);
 
   const handleClick = (
     _e: React.MouseEvent<HTMLDivElement, MouseEvent>,
