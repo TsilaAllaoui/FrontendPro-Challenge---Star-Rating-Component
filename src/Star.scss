@@ -1,18 +1,14 @@
-#star {
-  color: grey;
+#left-part {
   font-size: 5rem;
-  display: flex;
-  width: 8rem;
+  color: grey;
+  //   transform: translateX(50%);
+  width: 200%;
+}
 
-  #left {
-    clip-path: inset(0 50% 0 0);
-    color: grey;
-    transform: translateX(50%);
-  }
-
-  #right {
-    clip-path: inset(0 0 0 50%);
-    color: grey;
-    transform: translateX(-50%);
-  }
+#right-part {
+  width: 200%;
+  //   width: 25%;
+  font-size: 5rem;
+  color: grey;
+  transform: scaleX(-1) translateX(50%);
 }

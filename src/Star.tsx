@@ -1,15 +1,22 @@
 import "./Star.scss";
-import { AiFillStar } from "react-icons/ai";
+import { FaStarHalf } from "react-icons/fa";
 
-function Star({ on }: { on: boolean }) {
+function LeftStar({ on }: { on: boolean }) {
   return (
-    <div id="star">
-      <AiFillStar
-        id="left"
-        style={{ color: on ? "rgb(251, 205, 22)" : "grey" }}
-      />
-      <AiFillStar id="right" />
-    </div>
+    <FaStarHalf
+      id="left-part"
+      style={{ color: on ? "rgb(251, 205, 22)" : "grey" }}
+    />
   );
 }
-export default Star;
+
+function RightStar({ on }: { on: boolean }) {
+  return (
+    <FaStarHalf
+      id="right-part"
+      style={{ color: on ? "rgb(251, 205, 22)" : "grey" }}
+    />
+  );
+}
+
+export { LeftStar, RightStar };
